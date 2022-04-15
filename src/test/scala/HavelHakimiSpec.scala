@@ -5,6 +5,8 @@ import matchers._
 
 class HavelHakimiSpec extends AnyFlatSpec with should.Matchers {
 
+  behavior of "HavelHakimi.isMeetingPossible()"
+
   "isMeetingPossible" should "return true given a sequence of answers to the question, apply the Havel-Hakimi algorithm to determine whether or not it's possible that everyone was telling the truth" in {
 
     isMeetingPossible(List(3, 1, 2, 3, 1, 0)) shouldBe true
