@@ -6,6 +6,8 @@ import matchers._
 
 class NewNumberSpec extends AnyFlatSpec with should.Matchers {
 
+  behavior of "NewNumber.addOneToNumber()"
+
   "addOneToNumber" should "print a new number by adding one to each of its digit" in {
     addOneToNumber(0) shouldBe (1)
     addOneToNumber(12) shouldBe (23)
