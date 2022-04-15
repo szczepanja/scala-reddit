@@ -1,5 +1,9 @@
+import scala.annotation.tailrec
+
 object HavelHakimi {
 
-  def warmup(ls: Array[Int]): Array[Int] = ls.filterNot(_ == 0)
+  def isMeetingPossible(list: List[Int]): Boolean = list.filterNot(_ == 0).sorted.reverse match {
+    case Nil => true
+  }
 
 }
